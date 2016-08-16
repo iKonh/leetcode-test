@@ -1,5 +1,6 @@
 import leetcode.Problem1;
 import leetcode.Problem377;
+import leetcode.Problem6;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -26,5 +27,12 @@ public class ProblemTest1 {
         Arrays.sort(result);
         assertEquals(result[0], 3);
         assertEquals(result[1], 4);
+    }
+
+    @Test
+    public void test6() {
+        String s = "PAYPALISHIRING";
+        String result = Problem6.convert(s, 3);
+        assertEquals(result, "PAHNAPLSIIGYIR");
     }
 }
