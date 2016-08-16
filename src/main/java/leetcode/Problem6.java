@@ -29,8 +29,10 @@ public class Problem6 {
         for (int index = 0; index < s.length(); index++) {
             char c = s.charAt(index);
             int local = index % length;
+            // stringBuilderArray 0至(numRows-1)正序赋值
             if (local < stringBuilderArray.length - 1) {
                 stringBuilderArray[local].append(c);
+            // stringBuilderArray (numRows-2)至1倒序赋值
             } else {
                 stringBuilderArray[length - local].append(c);
             }
