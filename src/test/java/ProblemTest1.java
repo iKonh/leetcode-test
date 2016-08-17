@@ -43,6 +43,13 @@ public class ProblemTest1 {
     }
 
     @Test
+    public void test3() {
+        String s = "abcabcbb";
+        int result = Problem3.lengthOfLongestSubstring(s);
+        assertEquals(3, result);
+    }
+
+    @Test
     public void test6() {
         String s = "PAYPALISHIRING";
         String result = Problem6.convert(s, 3);
