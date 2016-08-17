@@ -1,7 +1,4 @@
-import leetcode.Problem1;
-import leetcode.Problem377;
-import leetcode.Problem6;
-import leetcode.Problem7;
+import leetcode.*;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -28,6 +25,21 @@ public class ProblemTest1 {
         Arrays.sort(result);
         assertEquals(result[0], 3);
         assertEquals(result[1], 4);
+    }
+
+    @Test
+    public void test2() {
+        Problem2.ListNode listNode1 = new Problem2.ListNode(2);
+        listNode1.next = new Problem2.ListNode(4);
+        listNode1.next.next = new Problem2.ListNode(3);
+
+        Problem2.ListNode listNode2 = new Problem2.ListNode(5);
+        listNode2.next = new Problem2.ListNode(6);
+        listNode2.next.next = new Problem2.ListNode(4);
+        Problem2.ListNode result = Problem2.addTwoNumbers(listNode1, listNode2);
+        assertEquals(result.val, 7);
+        assertEquals(result.next.val, 0);
+        assertEquals(result.next.next.val, 8);
     }
 
     @Test
