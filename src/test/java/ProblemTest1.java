@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Huangyipeng on 2016/08/12.
@@ -61,5 +62,12 @@ public class ProblemTest1 {
         int s = -123;
         int result = Problem7.reverse(s);
         assertEquals(result, -321);
+    }
+
+    @Test
+    public void test9() {
+        int x = 101;
+        boolean result = Problem9.isPalindrome(x);
+        assertTrue(result);
     }
 }
