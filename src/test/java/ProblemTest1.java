@@ -65,6 +65,13 @@ public class ProblemTest1 {
     }
 
     @Test
+    public void test8() {
+        String s = "-0923";
+        int result = Problem8.myAtoi(s);
+        assertEquals(result, -923);
+    }
+
+    @Test
     public void test9() {
         int x = 101;
         boolean result = Problem9.isPalindrome(x);
