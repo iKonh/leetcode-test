@@ -1,5 +1,6 @@
 import leetcode.Problem12;
 import leetcode.Problem13;
+import leetcode.Problem14;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -21,5 +22,12 @@ public class ProblemTest2 {
         String s = "CXXIII";
         int result = Problem13.romanToInt(s);
         assertEquals(result, 123);
+    }
+
+    @Test
+    public void test14() {
+        String[] strs = {"ab", "abc"};
+        String result = Problem14.longestCommonPrefix(strs);
+        assertEquals(result, "ab");
     }
 }
