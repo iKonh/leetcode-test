@@ -1,7 +1,4 @@
-import leetcode.Problem12;
-import leetcode.Problem13;
-import leetcode.Problem14;
-import leetcode.Problem15;
+import leetcode.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -49,5 +46,13 @@ public class ProblemTest2 {
         List<List<Integer>> result = Problem15.threeSum(nums);
 
         assertEquals(result.size(), 1);
+    }
+
+    @Test
+    public void test16() {
+        int[] nums = {-1, 2, 1, 4};
+        int result = Problem16.threeSumClosest(nums, 1);
+
+        assertEquals(2, result);
     }
 }
