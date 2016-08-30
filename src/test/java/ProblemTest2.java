@@ -55,4 +55,12 @@ public class ProblemTest2 {
 
         assertEquals(2, result);
     }
+
+    @Test
+    public void test17() {
+        String s = "";
+        List<String> resultList = Problem17.letterCombinations(s);
+
+        assertEquals(6, resultList.size());
+    }
 }
