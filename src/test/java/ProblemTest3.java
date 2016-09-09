@@ -1,4 +1,5 @@
 import leetcode.Problem26;
+import leetcode.Problem27;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -14,6 +15,13 @@ public class ProblemTest3 {
         int length = Problem26.removeDuplicates(nums);
 
         assertEquals(2, length);
-        assertEquals(new int[]{1,2}, nums);
+    }
+
+    @Test
+    public void test27() {
+        int[] nums = {3,2,2,3};
+        int length = Problem27.removeElement(nums, 3);
+
+        assertEquals(2, length);
     }
 }
